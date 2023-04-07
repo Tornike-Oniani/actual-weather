@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Fira Sans';
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #12c2e9 0%,#f64f59 99%);
+  background-repeat: none;
+  position: relative;
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.app {
+  width: 50%;
+  height: 200px;
+  background: linear-gradient(to bottom right, #ffffff 0%,#ededed 99%);
+  border-radius: 6px;
+  padding: 24px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form > *{
+  display: block;
+}
+
+.input-wrapper {
+  margin-bottom: 12px;
+}
+
+.input-label,
+.input-box {
+  padding: 6px 12px;
+  font-size: 16px;
+  border: 1px solid #CDD9ED;
+}
+
+.input-label {
+  border-radius: 6px 0 0 6px; 
+  background-color: #EEF4FF;
+  margin-right: -5px;
+}
+
+.input-box {
+  border-radius: 0 6px 6px 0;
+}
+
+.input-box:focus {
+  outline: none;
+  border-color: #275EFE;
+}
+
+.button {
+  padding: 6px 12px;
+  font-size: 16px;
+  background-color: #CDD9ED;
+  border-radius: 6px;
+  border: none; 
+}
