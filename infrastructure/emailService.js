@@ -1,9 +1,9 @@
-const nodemailer = require("nodemailer");
+const nodemailer = require('nodemailer');
 
 class EmailService {
-  constructor({ emailUser, emailPass }) {
+  constructor(emailUser, emailPass) {
     this.transporter = nodemailer.createTransport({
-      service: "gmail",
+      service: 'gmail',
       auth: {
         user: emailUser,
         pass: emailPass,
@@ -16,7 +16,7 @@ class EmailService {
       from: '"Weather App" <weatherapp@example.com>',
       to,
       subject,
-      text: body,
+      html: tempBody,
     });
     console.log(`Email sent: ${info.messageId}`);
   }

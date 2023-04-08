@@ -14,29 +14,30 @@
   <body>
     <div class="app">
       <h1 class="header">Enter email to get weather forecast...</h1>
-      <form action="" class="form">
-        <div class="input-wrapper">
-          <span class="input-label">Email</span>
-          <input
-            class="input-box"
-            type="email"
-            placeholder="example@mail.com"
-          />
-        </div>
-        <button class="button">Send weather</button>
-      </form>
+      <div class="input-wrapper">
+        <span class="input-label">Email</span>
+        <input
+          id="email"
+          class="input-box"
+          type="email"
+          placeholder="example@mail.com"
+        />
+      </div>
+      <button class="button">Send weather</button>
     </div>
 
     <script>
-      const button = document.querySelector(".button");
-      button.addEventListener("click", function (event) {
+      const button = document.querySelector('.button');
+      button.addEventListener('click', function (event) {
         event.preventDefault();
 
-        console.log("Yo");
-        fetch("/sendWeatherInfo/", {
-          headers: { "Content-Type": "application/json" },
-          method: "POST",
-          body: JSON.stringify({ city: "Berlin" }),
+        fetch('/sendWeatherInfo/', {
+          headers: { 'Content-Type': 'application/json' },
+          method: 'POST',
+          body: JSON.stringify({
+            city: 'Berlin',
+            email: 'Tornike707@gmail.com',
+          }),
         })
           .then(function (res) {
             console.log(res);

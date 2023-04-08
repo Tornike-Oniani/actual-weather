@@ -10,7 +10,7 @@ body {
   font-family: 'Fira Sans';
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom right, #12c2e9 0%,#f64f59 99%);
+  background: linear-gradient(to bottom right, #12c2e9 0%, #f64f59 99%);
   background-repeat: none;
   position: relative;
 }
@@ -23,7 +23,7 @@ body {
 .app {
   width: 50%;
   height: 200px;
-  background: linear-gradient(to bottom right, #ffffff 0%,#ededed 99%);
+  background: linear-gradient(to bottom right, #ffffff 0%, #ededed 99%);
   border-radius: 6px;
   padding: 24px;
   position: absolute;
@@ -32,24 +32,25 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.form > *{
+.form > * {
   display: block;
 }
 
 .input-wrapper {
   margin-bottom: 12px;
+  display: flex;
 }
 
 .input-label,
 .input-box {
   padding: 6px 12px;
   font-size: 16px;
-  border: 1px solid #CDD9ED;
+  border: 1px solid #cdd9ed;
 }
 
 .input-label {
-  border-radius: 6px 0 0 6px; 
-  background-color: #EEF4FF;
+  border-radius: 6px 0 0 6px;
+  background-color: #eef4ff;
   margin-right: -5px;
 }
 
@@ -59,13 +60,18 @@ body {
 
 .input-box:focus {
   outline: none;
-  border-color: #275EFE;
+  border-color: #275efe;
 }
 
 .button {
   padding: 6px 12px;
   font-size: 16px;
-  background-color: #CDD9ED;
+  background-color: #eef4ff;
   border-radius: 6px;
-  border: none; 
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #cdd9ed;
 }
